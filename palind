@@ -1,0 +1,16 @@
+#!/bin/bash
+read n
+sum=0
+temp=$n
+while (($temp>0))
+do
+r=`expr $temp % 10`
+temp=`expr $temp / 10`
+sum=`expr $sum \* 10 + $r`
+done
+if(($sum==$n))
+then 
+echo "palind"
+else
+echo "not"
+fi
