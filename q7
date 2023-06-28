@@ -1,0 +1,11 @@
+#!/bin/bash
+c=0
+read n
+for((i=1;i<=n;i++))
+do
+s=`expr $i \* $i`
+echo -n "$s "
+c=`expr $c + $s`
+done
+echo
+echo $c
