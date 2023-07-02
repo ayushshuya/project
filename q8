@@ -1,0 +1,12 @@
+#!/bin/bash
+c=0
+s=0
+read n
+for((i=1;i<=n;i++))
+do
+c=`expr $c \* 10 + 1`
+echo -n "$c "
+s=`expr $s + $c`
+done
+echo 
+echo $s
